@@ -1,0 +1,18 @@
+  @font-face {
+        font-family: Akkurat Mono;
+        src: url('Akkurat-Mono.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+      @font-face {
+        font-family: Akkurat;
+        src: url('Akkurat.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+      @font-face {
+        font-family: Akkurat Bold;
+        src: url('Akkurat-Bold.otf');
+        font-weight: bold;
+        font-style: normal;
+    }
