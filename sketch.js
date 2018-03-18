@@ -37,6 +37,11 @@ function setup() {
     }
 
 }
+// Disable scrolling.
+document.ontouchmove = function (e) {
+    e.preventDefault();
+  }
+
 function unborderThis() {
     this.style("border", "0px");
 
