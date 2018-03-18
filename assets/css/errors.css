@@ -4,32 +4,39 @@ body {
 }
 
 .logo {
-    z-index:10;
+    z-index: 10;
     position: fixed;
     width: 64px;
-    margin:20px;
+    margin: 20px;
 }
-.basecard{
+
+.basecard {
     background-color: white;
-    color:black;
+    color: black;
     padding: 10px 30px;
     border: 2px solid black;
 }
-h1 {
 
+h1 {
     font-family: Akkurat Bold;
 }
 
 .noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    -khtml-user-select: none;    /* Konqueror */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;           /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                     not supported by any browser */
-      cursor: default;
-  }
+    cursor: default;
+}
 
 .containing {
     position: absolute;
@@ -108,7 +115,6 @@ h1 {
     -moz-transition-delay: 0.4s;
     -o-transition-delay: 0.4s;
     transition-delay: 0.4s;
-
 }
 
 .button:active:before {

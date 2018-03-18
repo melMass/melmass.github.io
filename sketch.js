@@ -1,23 +1,23 @@
 var a;
 var ready;
-var loading=0;
-var clicks=30;
+var loading = 0;
+var clicks = 30;
 var login;
-var l=0;
+var l = 0;
 
 function setup() {
     a = createCanvas(windowWidth, windowHeight);
     noStroke();
     ready = 0;
 
-/*     login = select(".login");
-    login.style("display","none");
-    logo = select("#logo");
-    logo.mouseClicked(logToggle);
-    logo.mouseOver(borderThis);
-    logo.mouseOut(unborderThis); */
+    /*     login = select(".login");
+        login.style("display","none");
+        logo = select("#logo");
+        logo.mouseClicked(logToggle);
+        logo.mouseOver(borderThis);
+        logo.mouseOut(unborderThis); */
 
-    center= select(".center");
+    center = select(".center");
 
     a.touchStarted(grow);
     a.mouseClicked(grow);
@@ -40,17 +40,18 @@ function setup() {
 // Disable scrolling.
 document.ontouchmove = function (e) {
     e.preventDefault();
-  }
+}
 
 function unborderThis() {
     this.style("border", "0px");
 
 }
-function borderThis(){
 
-     this.style("border", "0px");
+function borderThis() {
 
-    }
+    this.style("border", "0px");
+
+}
 /* function logToggle(){
 
     if (l===0) {
@@ -73,65 +74,62 @@ if (keyCode==76){
 
 function draw() {
 
-/*     if (ready === 0) {
-        background(125,30,80);
-        fill(255,150);
-
-        rect(0, windowHeight, windowWidth, -loading);
-        loading += random(15);
-
-        if (loading >= windowHeight) {
+    /*     if (ready === 0) {
             background(125,30,80);
-            rect(0, windowHeight, windowWidth, -windowHeight);
-            ready = 1;
+            fill(255,150);
+
+            rect(0, windowHeight, windowWidth, -loading);
+            loading += random(15);
+
+            if (loading >= windowHeight) {
+                background(125,30,80);
+                rect(0, windowHeight, windowWidth, -windowHeight);
+                ready = 1;
+            }
+
         }
+        else { */
+    var times = 500;
+    if (l == 1) {
+        times = times / 3;
+    }
+    for (i = 0; i < times - clicks; i++) {
+
+        colorMode(RGB);
+        fill(random(mouseX), random(255), random(mouseY), random(255));
+        ellipse(random(windowWidth), random(windowHeight), 3 + clicks, 3 + clicks);
 
     }
-    else { */
-        var times=500;
-        if(l==1){
-            times=times/3;
-        }
-        for (i = 0; i < times-clicks; i++) {
 
-            colorMode(RGB);
-            fill(random(mouseX), random(255), random(mouseY), random(255));
-            ellipse(random(windowWidth), random(windowHeight), 3+clicks, 3+clicks);
+}
 
-        }
-
-    }
-
-function mouseClicked(event)
-{
+function mouseClicked(event) {
     grow();
 
 }
 
-function touchStarted()
-{
+function touchStarted() {
     grow();
 }
 
-function grow(){
-    clicks+=1;
+function grow() {
+    clicks += 1;
 }
 
 function deviceShaken() {
-    clicks=0;
+    clicks = 0;
 }
 
 function windowResized() {
 
     resizeCanvas(windowWidth, windowHeight);
-    if(windowWidth<=400){
-        pxs=select(".subtitle");
+    if (windowWidth <= 400) {
+        pxs = select(".subtitle");
         // pxs.html("(touch the logo to login)");
-        pxs.style("font-size","8pt");
-    }
-    else{
-        pxs=select(".subtitle");
+        pxs.style("font-size", "8pt");
+    } else {
+        pxs = select(".subtitle");
         // pxs.html("(press l to login)");
-        pxs.style("font-size","12pt");
+        pxs.style("font-size", "12pt");
     }
 }

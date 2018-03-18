@@ -1,129 +1,128 @@
-canvas{
-    position:fixed;
+canvas {
+    position: fixed;
     /* background-color: #ef4b9e; */
     background-color: #000000;
-    z-index:0;
+    z-index: 0;
 }
 
-.title{
-    position:absolute;
-    top:50%;
-    left:50%;
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    z-index:5;
-    color:black;
-    font-family: 'Akkurat Mono',serif;
+    z-index: 5;
+    color: black;
+    font-family: 'Akkurat Mono', serif;
     background-color: #fbffff;
     width: 50%;
     max-width: 386px;
-    padding:25px;
+    padding: 25px;
     padding-bottom: 33px;
-    font-size:1.7em;
+    font-size: 1.7em;
     height: 60px;
-
 }
-.subtitle{
-    position:absolute;
-    top:56.2%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    z-index:5;
-    color:black;
-    font-family: 'Akkurat Mono',serif;
 
+.subtitle {
+    position: absolute;
+    top: 56.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: black;
+    font-family: 'Akkurat Mono', serif;
     width: 70%;
     max-width: 386px;
-    padding:25px;
-    font-size:12pt;
-
+    padding: 25px;
+    font-size: 12pt;
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   not supported by any browser */
     cursor: default;
 }
 
-.logo>img{
+.logo>img {
     position: fixed;
-    z-index:10;
-    width:64px;
-    margin:20px;
-
+    z-index: 10;
+    width: 64px;
+    margin: 20px;
 }
-.login{
+
+.login {
     position: fixed;
-    font-size:11pt;
+    font-size: 11pt;
     z-index: 10;
     color: #dcf2f2;
-
-    font-family: 'Akkurat Mono',serif;
+    font-family: 'Akkurat Mono', serif;
     text-align: center;
-    width:100%;
-    left:50%;}
+    width: 100%;
+    left: 50%;
+}
 
-input{
+input {
     outline-width: 0;
 }
-.connect{
+
+.connect {
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
     margin-top: 37px;
-
     background-color: #319aa6;
-     border: 2px solid #2b8490;
+    border: 2px solid #2b8490;
     border-radius: 4px;
     color: #ffffff;
 }
-.connect:hover{
 
+.connect:hover {
     background-color: hotpink;
     border: 2px solid #ef4b9e;
-
 }
-.box>h1{
+
+.box>h1 {
     opacity: 1;
-    margin-top:38px;
+    margin-top: 38px;
     margin-bottom: 42px;
-    font-size:15pt;
+    font-size: 15pt;
     letter-spacing: 10px;
-
     color: #dcf2f2;
-
 }
-.box>p{
-    padding:0;
-    margin:10px;
 
-    font-size:12pt;
-
+.box>p {
+    padding: 0;
+    margin: 10px;
+    font-size: 12pt;
 }
-.box{
+
+.box {
     font-weight: 100;
-    position:absolute;
+    position: absolute;
     background-color: #4b4c4a;
     opacity: 1;
-
     border-color: black;
-
     display: block;
     max-width: 439px;
     width: 57%;
-    height:325px;
-transform: translate(-50%, 45%);
+    height: 325px;
+    transform: translate(-50%, 45%);
     min-width: 256px;
-
 }
 
-.center{
+.center {
     width: 50%;
     position: absolute;
     top: 50%;
