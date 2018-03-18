@@ -14,11 +14,11 @@ canvas{
     color:black;
     font-family: 'Akkurat Mono',serif;
     background-color: #fbffff;
-    width: 57%;
+    width: 50%;
     max-width: 386px;
     padding:25px;
     padding-bottom: 33px;
-    font-size:21pt;
+    font-size:1.7em;
     height: 60px;
 
 }
@@ -52,14 +52,14 @@ canvas{
 .logo{
     width: 100%;
     height: 100%;
-     z-index:15;
+    z-index:15;
 
 }
 .login{
     position: fixed;
     font-size:11pt;
     z-index: 10;
-     color: #dcf2f2;
+    color: #dcf2f2;
 
     font-family: 'Akkurat Mono',serif;
     text-align: center;
