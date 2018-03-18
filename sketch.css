@@ -1,6 +1,7 @@
 canvas{
     position:fixed;
-  
+    /* background-color: #ef4b9e; */
+    background-color: #000000;
     z-index:0;
 }
 
@@ -47,7 +48,6 @@ canvas{
                                   not supported by any browser */
     cursor: default;
 }
-
 
 .logo{
     width: 100%;
@@ -96,8 +96,6 @@ input{
     letter-spacing: 10px;
     text-transform: uppercase;
 
-
-
     color: #dcf2f2;
 
 }
@@ -123,14 +121,12 @@ input{
 transform: translate(-50%, 45%);
     min-width: 256px;
 
-
 }
 .logo>img{
     position: fixed;
     z-index:10;
     width:64px;
     margin:35px;
-
 
 }
 .center{
