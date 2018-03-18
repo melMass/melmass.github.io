@@ -22,19 +22,19 @@ function setup() {
     a.touchStarted(grow);
     a.mouseClicked(grow);
 
-     if(windowWidth<=400){
-        pxs=select(".subtitle");
-        pxs.style("margin-top","25px");
-        // pxs.html("(touch the logo to login)");
-        pxs.style("font-size","8pt");
-    }
-    else{
-         pxx=select(".title");
-         pxx.style("width","70%");
-        pxs=select(".subtitle");
-      /*   pxs.html("(press l to login)"); */
-        pxs.style("font-size","12pt");
-    }
+    //  if(windowWidth<=400){
+    //     pxs=select(".subtitle");
+    //     pxs.style("margin-top","25px");
+    //     // pxs.html("(touch the logo to login)");
+    //     pxs.style("font-size","8pt");
+    // }
+    // else{
+    //      pxx=select(".title");
+    //      pxx.style("width","70%");
+    //     pxs=select(".subtitle");
+    //   /*   pxs.html("(press l to login)"); */
+    //     pxs.style("font-size","12pt");
+    // }
 
 }
 // Disable scrolling.
