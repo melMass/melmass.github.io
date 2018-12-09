@@ -33,6 +33,14 @@
       <script src="libraries/p5.dom.js" type="text/javascript"></script>
       <script src="libraries/p5.sound.js" type="text/javascript"></script>
       <script src="sketch.js" type="text/javascript"></script>
+
+      <!-- SSL Redirect -->
+      <script>
+            var host = "melmass.github.io";
+            if (!(window.location.host.startsWith("127.0.0.1")) && !(window.location.host.startsWith("localhost")) &&(window.location.protocol != "https:"))
+                window.location.protocol = "https";
+      </script>
+
       <link rel="stylesheet" type="text/css" href="assets/fonts/akkurat/akkurat.css">
       <link rel="stylesheet" type="text/css" href="assets/fonts/pigeon/pigeon.css">
       <link rel="stylesheet" type="text/css" href="assets/css/errors.css">
@@ -53,6 +61,7 @@
       <img class="logo noselect" src="assets/logos/logo_cover.png" alt="">
       <div class="containing noselect basecard">
             <h1>MEL MASSADIAN</h1>
+            
             <p>- new media -</p>
       </div>
 
