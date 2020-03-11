@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: melmassadian.com
+Token: fd19f10466ca427ea60bdcff04b98826f4bb952cbdd933191684817109d71a36
